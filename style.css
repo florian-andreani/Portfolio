@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    line-height: 1.6;
+    color: #fff;
+    background: #000;
+}
+
+.Accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    background: url('IMAGES/blue.jpeg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+.Accueil h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.Accueil h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Roboto Mono", monospace;
+}
+
+.Apropos {
+    display: flex;
+    min-height: 100vh;
+    height: auto;
+    overflow: auto;
+   
+}
+
+.Apropos-content {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    justify-content: flex-end
+    
+    
+}
+.Apropos-content div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+}
+.Apropos img {
+    width: 50%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.Apropos > div {
+    width: 100%; /* Occupe la moitié droite */
+    background: #ffffff; /* Fond noir */
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 8%;
+}
+
+.Apropos h3 {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.9rem;
+    
+}
+
+.Apropos p {
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.9rem;
+    text-align: justify;
+    
+}
+
+.contact {
+    text-align: right;
+    padding: 2rem;
+    background: #222;
+    padding-right: 13%
+
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    background: #005392;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact a:hover {
+    background: #005a9e;
+    transform: scale(1.05); 
+}
+
+.trait
+{
+width:295px;
+border:1.7px solid rgba(255, 255, 255, 0.938);
+margin-bottom: 0.8%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue; 
+    border-radius: 20px; 
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000; 
+    color: #fff; 
+    padding: 1rem 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0078d4; 
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    font-weight: bold
+}
+
+.navbar a:hover {
+    color: #005a9e; 
+}
+
+.Accueil, .Apropos, .contact {
+    margin-top: 4rem;
+}
+
+.scroll-button {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    border-radius: 50%;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9); 
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.scroll-button:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.1); 
+}
+
+.scroll-button span {
+    display: inline-block;
+    animation: bounce 1.5s infinite; 
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Accueil h1 {
+        font-size: 2.5rem;
+    }
+
+    .Accueil h2 {
+        font-size: 1.2rem; 
+    }
+
+    .Apropos {
+        flex-direction: column; 
+    }
+
+    .Apropos img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .Apropos-content div {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .Apropos h3 {
+        font-size: 1.4rem; 
+    }
+
+    .Apropos p {
+        font-size: 0.9rem; 
+        line-height: 1.6; 
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0; 
+    }
+
+    .scroll-button {
+        bottom: 1rem;
+        left: 1rem; 
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Accueil h1 {
+        font-size: 2rem;
+    }
+
+    .Accueil h2 {
+        font-size: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1rem; 
+    }
+
+    .contact a {
+        font-size: 0.9rem; 
+        padding: 0.5rem 1rem; 
+    }
+
+    .scroll-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
