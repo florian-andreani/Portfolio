@@ -299,8 +299,7 @@ body::-webkit-scrollbar {
     }
 
     .Apropos img {
-        width: 10%; 
-        height: auto;
+        display: none;
     }
 
     .Apropos-content div {
@@ -309,11 +308,11 @@ body::-webkit-scrollbar {
     }
 
     .Apropos h3 {
-        font-size: 1.4rem; 
+        font-size: 1.5rem; 
     }
 
     .Apropos p {
-        font-size: 0.9rem; 
+        font-size: 1rem; 
         line-height: 1.6; 
     }
 
@@ -345,6 +344,15 @@ body::-webkit-scrollbar {
         font-size: 1rem;
     }
 
+        .Apropos h3 {
+            font-size: 1.2rem; 
+        }
+    
+        .Apropos p {
+            font-size: 0.9rem; 
+            padding: 0.5rem;
+        }
+    }
     .navbar a {
         font-size: 1rem; 
     }
