@@ -21,6 +21,7 @@ body {
     background: url('IMAGES/blue.jpeg') no-repeat center center/cover;
     text-align: center;
     color: #fff;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .Accueil h1 {
@@ -44,13 +45,16 @@ body {
 }
 
 .Apropos-content {
+    opacity: 0; /* Commence invisible */
+    transform: translateY(50px); /* Commence avec un décalage vers le bas */
+    transition: opacity 0.2s ease, transform 0.2s ease; /* Transition rapide et fluide */
     display: flex;
     flex-direction: row; 
     width: 100%;
     justify-content: flex-end
     
-    
 }
+
 .Apropos-content div {
     display: flex;
     flex-direction: column; 
@@ -65,8 +69,8 @@ body {
 }
 
 .Apropos > div {
-    width: 100%; /* Occupe la moitié droite */
-    background: #ffffff; /* Fond noir */
+    width: 100%; 
+    background: #ffffff; 
     color: #000000;
     display: flex;
     flex-direction: row;
@@ -96,6 +100,55 @@ body {
     
 }
 
+/* Section Mes projets */
+.Projets {
+    background: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    padding: 4rem 2rem; /* Espace autour du contenu */
+}
+
+.Projets h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0078d4; /* Bleu pour le titre */
+}
+
+/* Conteneur des projets */
+.projets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem; /* Espace entre les boîtes */
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.1); /* Fond gris transparent */
+    border: 3px solid #0078d4; /* Bordure bleue */
+    color: #fff; /* Texte blanc */
+    font-size: 1.2rem;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    width: 400px; /* Largeur fixe */
+    height: 240px; /* Hauteur fixe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation fluide */
+}
+
+
+.project-box:hover {
+    background: #0078d493; /* Fond devient bleu au survol */
+    transform: scale(1.1); /* Agrandit la boîte de 10% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Ajoute une ombre pour renforcer l'effet */
+}
+
+
 .contact {
     text-align: right;
     padding: 2rem;
@@ -106,6 +159,7 @@ body {
 
 .contact a {
     display: inline-block;
+    border: 1.9px solid #ffffff;
     margin: 0.5rem;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -209,6 +263,12 @@ body::-webkit-scrollbar {
 .scroll-button span {
     display: inline-block;
     animation: bounce 1.5s infinite; 
+}
+
+.Accueil.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); 
+    
+    opacity: 0.2; 
 }
 
 
