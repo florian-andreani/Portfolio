@@ -45,9 +45,9 @@ body {
 }
 
 .Apropos-content {
-    opacity: 0; /* Commence invisible */
-    transform: translateY(50px); /* Commence avec un décalage vers le bas */
-    transition: opacity 0.2s ease, transform 0.2s ease; /* Transition rapide et fluide */
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.2s ease, transform 0.2s ease; 
     display: flex;
     flex-direction: row; 
     width: 100%;
@@ -100,12 +100,12 @@ body {
     
 }
 
-/* Section Mes projets */
+
 .Projets {
-    background: #000; /* Fond noir */
-    color: #fff; /* Texte blanc */
+    background: #000; 
+    color: #fff; 
     text-align: center;
-    padding: 4rem 2rem; /* Espace autour du contenu */
+    padding: 4rem 2rem;
 }
 
 .Projets h2 {
@@ -114,38 +114,38 @@ body {
     font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #0078d4; /* Bleu pour le titre */
+    color: #0078d4; 
 }
 
-/* Conteneur des projets */
+
 .projets-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem; /* Espace entre les boîtes */
+    gap: 2.5rem; 
 }
 
 .project-box {
-    background: rgba(255, 255, 255, 0.1); /* Fond gris transparent */
-    border: 3px solid #0078d4; /* Bordure bleue */
-    color: #fff; /* Texte blanc */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 3px solid #0078d4; 
+    color: #fff; 
     font-size: 1.2rem;
     font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
-    width: 400px; /* Largeur fixe */
-    height: 240px; /* Hauteur fixe */
+    width: 400px;
+    height: 240px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Coins arrondis */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation fluide */
+    border-radius: 10px; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 
 .project-box:hover {
-    background: #0078d493; /* Fond devient bleu au survol */
-    transform: scale(1.1); /* Agrandit la boîte de 10% */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Ajoute une ombre pour renforcer l'effet */
+    background: #0078d493; 
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
 }
 
 
@@ -299,7 +299,7 @@ body::-webkit-scrollbar {
     }
 
     .Apropos img {
-        width: 100%; 
+        width: 10%; 
         height: auto;
     }
 
